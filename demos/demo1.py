@@ -40,6 +40,13 @@ class MaxStack:
     def push(self, item):
         """Add a new item onto the top of our stack."""
         # Your code here
+        # do the normal push operation
+        self.stack.push(item)
+
+        # check if our max stack is empty?
+        # or if our item is larger thant the top of our max stack
+        if self.max_stack.peek() is None or item >= self.max_stack.peek():
+            max_stage.push(item)
 
 
     def pop(self):

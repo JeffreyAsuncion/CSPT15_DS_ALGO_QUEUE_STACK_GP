@@ -37,13 +37,16 @@ class Queue:
         
         return old_front
 
+    def is_empty(self):
+        return self.front == None
+
 
 # test
 
-# q = Queue()
-# print(q.is_empty()) # => True
-# q.enqueue(12)
-# print(q.is_empty()) # => False
-# q.dequeue()
-# print(q.is_empty()) # => True
+q = Queue()
+print(q.is_empty()) # => True
+q.enqueue(12)
+print(q.is_empty()) # => False
+q.dequeue()
+print(q.is_empty()) # => True
 
