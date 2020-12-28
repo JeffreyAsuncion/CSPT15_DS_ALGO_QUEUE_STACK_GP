@@ -30,3 +30,4 @@ class Stack:
     def peek(self):
         if self.top is not None:
             return self.top.data
+            

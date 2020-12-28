@@ -13,5 +13,5 @@ class Stack:
         return "The stack is empty"
 
     def peek(self):
-        if len(self.data) > 0:
-            return self.data[len(self.data) - 1]
+        if self.top is not None:
+            return self.top.data

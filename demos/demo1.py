@@ -35,6 +35,7 @@ class Stack:
 class MaxStack:
     def __init__(self):
         # Your code here
+        pass
 
 
     def push(self, item):
